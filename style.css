@@ -1,0 +1,220 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(238, 192, 192);
+    color: #333;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: rgba(119, 7, 7, 0.878);
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+}
+header h1{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+header nav ul li{
+    margin-left: 20px;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+header nav ul li a:hover{
+    color: #ffeb3b;
+}
+main{
+   flex: 1;
+   max-width: 1200px;
+   margin: 20px auto;
+   padding: 0 20px;
+}
+.photo-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.photo-container img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.text h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:  rgba(119, 7, 7, 0.878);
+}
+.text p{
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+.text a{
+    background-color: #ffeb3b;
+    border: 2px solid black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.photo-con{
+    width: 50%;
+    margin: 0 auto;
+    text-align: start;
+}
+.photo-con img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 22px;
+    box-shadow: rgb(40, 31, 15);
+
+}
+.photo-con p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(208, 208, 60);
+    
+}
+.text img{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: #333;
+    padding-bottom: 30px;
+}
+.footer-container{
+    background-color: rgb(216, 174, 95);
+}
+.footer-img{
+    display: flex;
+}
+.footer-img p{
+    display: block;
+    text-align: start;
+}
+.footer-container h2{
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    color:  rgba(119, 7, 7, 0.878);;
+}
+.footer-container {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-img .person {
+    text-align: center;
+    max-width: 200px;
+}
+
+.footer-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 120px;
+}
+
+.footer-img p {
+    font-size: 20px;
+    color:black;
+    margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.contact p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width : 768px) {
+    header.container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .photo-con p{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width : 360px) {
+    header.container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
